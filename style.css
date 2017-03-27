@@ -1,8 +1,20 @@
+html {
+    background:#565;
+}
+
+h1 {
+    font-size:3em;
+}
+
+h2 {
+    font-size:2.5em;
+}
 
 .menu {
     display: flex;
     flex-wrap: wrap;
     background:#333;
+    justify-content:center;
 }
 
 .menuItem {
@@ -23,17 +35,30 @@
 }
 
 .banner {
-    display:flex;
-    flex-wrap: wrap;
-    height:400px;
-    background: linear-gradient(to right,#000080,#000000)
+    height: 300px;
 }
 
-.banner h1{
-    font-weight:bold;
-    color:white;
-    font-size:5em;
-    line-height:400px;
-    text-align:center;
-    flex-grow:1
+.banner img{
+    height: 300px;
+}
+
+.thepage {
+    max-width:1000px;
+}
+
+.numbers {
+    position:absolute;
+    height:300px;
+    top:0px;
+    left:0px;
+    background-color: #000;
+    color: #020;
+    font-size: 14px;
+    overflow: hidden;
+    text-align:justify;
+    z-index:-1;
+}
+
+p {
+    text-align:justify;
 }
