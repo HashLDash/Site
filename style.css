@@ -22,3 +22,18 @@
     background: gray;
 }
 
+.banner {
+    display:flex;
+    flex-wrap: wrap;
+    height:400px;
+    background: linear-gradient(to right,#000080,#000000)
+}
+
+.banner h1{
+    font-weight:bold;
+    color:white;
+    font-size:5em;
+    line-height:400px;
+    text-align:center;
+    flex-grow:1
+}
