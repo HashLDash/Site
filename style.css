@@ -1,5 +1,6 @@
 html {
     background:#DDD;
+    width:100%;
 }
 
 h1 {
@@ -15,6 +16,7 @@ h2 {
     flex-wrap: wrap;
     background:#333;
     justify-content:center;
+    max-width: 100%;
 }
 
 .menuItem {
@@ -35,11 +37,44 @@ h2 {
 }
 
 .banner {
-    height: 300px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+
 }
 
-.banner img{
-    height: 300px;
+.bannerImg{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.bannerImg img {
+    max-width:100%;
+    max-height:280px;
 }
 
 .thepage {
@@ -61,4 +96,5 @@ h2 {
 
 p {
     text-align:justify;
+    max-width: 100%;
 }
