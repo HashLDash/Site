@@ -98,3 +98,7 @@ p {
     text-align:justify;
     max-width: 100%;
 }
+
+.fb-comments {
+    width:90%;
+}
