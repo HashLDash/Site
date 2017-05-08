@@ -1,7 +1,7 @@
 import telepot
 from Chatbot import Chatbot
 
-telegram = telepot.Bot("")
+telegram = telepot.Bot("TOKEN")
 
 bot = Chatbot("HashLDash")
 
