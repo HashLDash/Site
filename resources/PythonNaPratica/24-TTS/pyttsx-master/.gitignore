@@ -1,5 +1,0 @@
-*.pyc
-build/
-dist/
-pyttsx.egg-info/
-_build/
