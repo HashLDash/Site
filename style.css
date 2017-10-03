@@ -78,6 +78,11 @@ h2 {
 }
 
 .thepage {
+    display:flex;
+}
+
+.main {
+    margin:50px;
     max-width:1000px;
 }
 
@@ -101,4 +106,14 @@ p {
 
 .fb-comments {
     width:90%;
+}
+
+.propLateralDireita {
+    flex-grow:1;
+    background:#bbb;
+}
+
+.propLateralEsquerda {
+    flex-grow:1;
+    background:#bbb;
 }
