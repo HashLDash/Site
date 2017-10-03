@@ -86,6 +86,7 @@ h2 {
 .main {
     margin:50px;
     max-width:calc(100% - 420px);
+    flex-grow:1;
 }
 
 .numbers {
@@ -103,7 +104,8 @@ h2 {
 
 p {
     text-align:justify;
-    max-width: 100%;
+    max-width: 800px;
+    text-indent:50px;
 }
 
 .fb-comments {
@@ -123,5 +125,5 @@ p {
 }
 
 .youtube {
-    max-width:100%;
+    max-width:840px;
 }
