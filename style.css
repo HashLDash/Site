@@ -127,3 +127,31 @@ p {
 .youtube {
     max-width:840px;
 }
+
+@media only screen and (max-width: 590px) {
+    .propLateralEsquerda{
+        display:None;
+    }
+
+    .propLateralDireita{
+        display:None;
+    }
+
+    .main {
+        margin:10px;
+        max-width:100%;
+        flex-grow:1;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 591px) {
+    .propLateralDireita{
+        display:None;
+    }
+
+    .main {
+        margin:10px;
+        max-width:calc(100% - 180px);
+        flex-grow:1;
+    }
+}
