@@ -79,11 +79,13 @@ h2 {
 
 .thepage {
     display:flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .main {
     margin:50px;
-    max-width:1000px;
+    max-width:calc(100% - 420px);
 }
 
 .numbers {
@@ -111,9 +113,15 @@ p {
 .propLateralDireita {
     flex-grow:1;
     background:#bbb;
+    max-width:160px;
 }
 
 .propLateralEsquerda {
     flex-grow:1;
     background:#bbb;
+    max-width:160px;
+}
+
+.youtube {
+    max-width:100%;
 }
