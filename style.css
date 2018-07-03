@@ -126,6 +126,7 @@ p {
 
 .youtube {
     max-width:840px;
+    padding-top: 75%;
 }
 
 @media only screen and (max-width: 590px) {
