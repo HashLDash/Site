@@ -154,4 +154,8 @@ p {
         max-width:calc(100% - 180px);
         flex-grow:1;
     }
+    
+    iframe {
+        height:300px;
+    }
 }
