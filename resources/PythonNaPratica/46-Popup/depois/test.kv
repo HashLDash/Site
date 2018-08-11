@@ -1,0 +1,72 @@
+<Gerenciador>:
+    Menu:
+        name: 'menu'
+    Tarefas:
+        name: 'tarefas'
+    
+<Menu>:
+    BoxLayout:
+        orientation:'vertical'
+        padding:200
+        spacing:50
+        canvas:
+            Color:
+                rgba:1,1,1,1
+            Rectangle:
+                size:self.size
+                pos:self.pos
+                source:'moldura.png'
+        Image:
+            source:'logo.png'
+            size_hint_y:None
+            height:300
+            allow_stretch:True
+        Botao:
+            text:'Tarefas'
+            on_release:app.root.current = 'tarefas'
+            cor:0.1,0.1,0.1,1
+        Botao:
+            text:'Assistente'
+        Botao:
+            text:'Sair'
+            on_release:root.confirmacao()
+
+<Tarefas>:
+    BoxLayout:
+        orientation:'vertical'
+        ActionBar:
+            ActionView:
+                ActionPrevious:
+                    title:'Tarefas'
+                    on_release:app.root.current = 'menu'
+                ActionButton:
+                    text:'Sair'
+                    on_release:app.stop()
+        ScrollView:
+            BoxLayout:
+                id:box
+                orientation:'vertical'
+                size_hint_y:None
+                height:self.minimum_height
+        BoxLayout:
+            size_hint_y:None
+            height:60
+            TextInput:
+                id:texto
+            Button:
+                text:'+'
+                size_hint_x:None
+                width:60
+                on_release:root.addWidget()
+
+<Tarefa>:
+    size_hint_y:None
+    height:200
+    Label:
+        id:label
+        font_size:30
+    Button:
+        text:'X'
+        size_hint_x:None
+        width:60
+        on_release:app.root.get_screen('tarefas').ids.box.remove_widget(root)
